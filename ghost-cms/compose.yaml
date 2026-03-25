@@ -15,8 +15,9 @@ services:
       database__connection__password: ghostpass
       database__connection__database: ghostdb
       NODE_ENV: development
+      security__staffDeviceVerification: false
     volumes:
-      - ./ghost-content:/var/lib/ghost/content
+      - ./ghost-content:/var/lib/ghost/content:cached  # For Mac with better performance
 
   db:
     image: mysql:8.0
