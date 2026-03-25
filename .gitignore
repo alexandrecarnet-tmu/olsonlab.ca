@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+
+# Production secrets
+.env
+
+# Ghost database volume
+ghost-cms/ghost-db/*
+
+# Ghost content
+ghost-cms/ghost-content/images/*
+ghost-cms/ghost-content/media/*
+ghost-cms/ghost-content/files/*
+ghost-cms/ghost-content/logs/*
+ghost-cms/ghost-content/data/*
+ghost-cms/ghost-content/apps/*
+ghost-cms/ghost-content/public/*
+
+# Legacy
+legacy Site Files/
+legacy Site Files/*
