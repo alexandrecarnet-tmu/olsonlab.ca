@@ -15,7 +15,9 @@ ghost-cms/ghost-content/logs/*
 ghost-cms/ghost-content/data/*
 ghost-cms/ghost-content/apps/*
 ghost-cms/ghost-content/public/*
+ghost-cms/ghost-content/themes/*
 
 # Legacy
 legacy Site Files/
 legacy Site Files/*
+_backup*
