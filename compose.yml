@@ -23,6 +23,7 @@ services:
   ghost:
     # Do not alter this without updating the Tinybird Sync container as well
     image: ghost:${GHOST_VERSION:-6-alpine}
+    container_name: ghost
     restart: always
     # This is required to import current config when migrating
     env_file:
@@ -30,6 +31,7 @@ services:
     environment:
       NODE_ENV: production
       url: https://${DOMAIN:?DOMAIN environment variable is required}
+      # url: http://<hardcoded-IP> # for pre-TLS testing when migrating servers
       admin__url: ${ADMIN_DOMAIN:+https://${ADMIN_DOMAIN}}
       database__client: mysql
       database__connection__host: db
