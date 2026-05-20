@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Node template
 
 # Logs
@@ -65,6 +66,35 @@ typings/
 *.sublime-*
 .vscode/*
 
+# macOS
+.DS_Store
+
+# Production secrets
+.env
+
+# Ghost Docker Custom
+.tinyb
+
+# Where we store docker data by default
+data
+
+# Ghost database volume
+ghost-cms/ghost-db/*
+
+# Ghost content
+ghost-cms/ghost-content/images/*
+ghost-cms/ghost-content/media/*
+ghost-cms/ghost-content/files/*
+ghost-cms/ghost-content/logs/*
+ghost-cms/ghost-content/data/*
+ghost-cms/ghost-content/apps/*
+ghost-cms/ghost-content/public/*
+ghost-cms/ghost-content/themes/*
+
+# Legacy
+legacy Site Files/
+legacy Site Files/*
+_backup*
 # OSX
 .DS_Store
 
@@ -73,3 +103,28 @@ typings/
 
 # Where we store docker data by default
 data
+=======
+# macOS
+.DS_Store
+
+# Production secrets
+.env
+
+# Ghost database volume
+ghost-cms/ghost-db/*
+
+# Ghost content
+ghost-cms/ghost-content/images/*
+ghost-cms/ghost-content/media/*
+ghost-cms/ghost-content/files/*
+ghost-cms/ghost-content/logs/*
+ghost-cms/ghost-content/data/*
+ghost-cms/ghost-content/apps/*
+ghost-cms/ghost-content/public/*
+ghost-cms/ghost-content/themes/*
+
+# Legacy
+legacy Site Files/
+legacy Site Files/*
+_backup*
+>>>>>>> bad414c85b3db8ad89516adeebf6d8a8aef6dd46
