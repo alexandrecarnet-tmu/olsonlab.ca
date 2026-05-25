@@ -16,6 +16,10 @@
 	# ActivityPub Service
 	import snippets/ActivityPub
 
+	# Redirect intuitive /admin path to usable /ghost
+	redir /admin /ghost 308
+	redir /admin/ /ghost/ 308
+
 	# Default proxy everything else to Ghost
 	handle {
 		reverse_proxy ghost:2368
